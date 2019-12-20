@@ -1,9 +1,5 @@
 # Change Log
 
-All notable changes to the "codingWithPusheen" extension will be documented in this file.
+## [Unreleased / 0.01 Preview]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+- Initial release 0.01 preview version.

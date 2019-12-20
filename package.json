@@ -4,12 +4,27 @@
 	"description": "Coding with pusheen the cat",
 	"publisher": "Raptazure",
 	"version": "0.0.1",
+	"icon": "logo.jpg",
 	"engines": {
 		"vscode": "^1.41.0"
 	},
 	"categories": [
 		"Other"
 	],
+	"keywords": [
+		"pusheen",
+		"inspire",
+		"remind"
+	],
+	"bugs": {
+		"url": "https://github.com/Raptazure/coding-with-pusheen/issues",
+		"email": "lamboghini299@gmail.com"
+	},
+	"homepage": "https://github.com/Raptazure/coding-with-pusheen/blob/master/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Raptazure/coding-with-pusheen.git"
+	},
 	"activationEvents": [
 		"onCommand:coding.start"
 	],

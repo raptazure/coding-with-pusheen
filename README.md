@@ -8,7 +8,7 @@
 - Open the command palette and enter `Meet Pusheen Now!` to call your lovely pusheen the cat!
 - Little pusheen is going to type together with you and inspire you to move on... And it will show love to you every 5000 ms!
 
-\!\[feature\]\(https://github.com/Raptazure/coding-with-pusheen/blob/master/demo.png\)
+![feature](demo.png)
 
 ## Quick Start
 
