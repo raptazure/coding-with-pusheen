@@ -12,14 +12,14 @@
 
 ## Quick Start
 
-- Clone this repository
-- Open command palette and enter `VSIX`
+- Download `coding-with-pusheen-0.01.vsix`
+- Open VS Code command palette and enter `VSIX`
 - Choose `coding-with-pusheen-0.01.vsix` to install the extension.
 - Reload and Enjoy!
 
 ## Requirements
 
-- Visual Studio Code.
+- Visual Studio Code 1.41.0 or higher.
 
 ## Extension Settings
 
