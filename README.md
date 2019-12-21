@@ -12,9 +12,9 @@
 
 ## Quick Start
 
-- Download `coding-with-pusheen-0.01.vsix`
-- Open VS Code command palette and enter `VSIX`
-- Choose `coding-with-pusheen-0.01.vsix` to install the extension.
+- Download `coding-with-pusheen-0.01.vsix` from [Releases](https://github.com/Raptazure/coding-with-pusheen/releases)
+- Open VS Code command palette and enter `Install from VSIX...`
+- Select `coding-with-pusheen-0.01.vsix` to install the extension.
 - Reload and Enjoy!
 
 ## Requirements
