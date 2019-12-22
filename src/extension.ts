@@ -3,12 +3,9 @@ import * as path from 'path';
 import { TextEncoder } from 'util';
 
 export function activate(context: vscode.ExtensionContext) {
-
+	
 	let currentPanel: vscode.WebviewPanel | undefined = undefined;
-	const cats = {
-		'coding pusheen': 'tenor.gif', 
-		'loving pusheen': 'love.gif'
-	};
+	
 	context.subscriptions.push(
 		vscode.commands.registerCommand('coding.start', () => {
 			const columnToShowIn = vscode.window.activeTextEditor ?
@@ -18,7 +15,6 @@ export function activate(context: vscode.ExtensionContext) {
 			if (currentPanel) {
 				currentPanel.reveal(columnToShowIn);
 			} else {
-				// Create and show the panel
 				currentPanel = vscode.window.createWebviewPanel(
 					'codingWithPusheen',
 					'Coding with Pusheen',
@@ -28,7 +24,7 @@ export function activate(context: vscode.ExtensionContext) {
 				
 				let iterator = 0;
 				const updateWebview = () => {
-					const cat = iterator++ % 2 ? 'love.gif' : 'tenor.gif';
+					const cat = iterator++ % 2 ? 'love.gif' : 'type.gif';
 					const onDiskPath = vscode.Uri.file(
 						path.join(context.extensionPath, 'images', cat)
 					);
@@ -55,7 +51,6 @@ export function activate(context: vscode.ExtensionContext) {
 	);
 }
 
-// HTML Content
 function getWebviewContent(catGifSrc: vscode.Uri) {
 	return `<!DOCTYPE html>
 	<html lang="en">
@@ -66,12 +61,17 @@ function getWebviewContent(catGifSrc: vscode.Uri) {
 		<title>Coding with Pusheen</title>
 	</head>
 	<body>
-		<img src="${catGifSrc}" alt="the image can't find its way home/(ㄒoㄒ)/~~">
-		<h2>Believe in yourself and Highly motivated...</h2>
-		<h3>Meet pusheen the cat and Enjoy a beautiful day!</h3>
+	  <div width="800px">
+		<img style="opacity: 0.75; float: right;" src="${catGifSrc}" alt="the image can't find its way home /(ㄒoㄒ)/" width="255" height="160">
+		<div style="font-family: Cascadia Code; font-size: medium; opacity: 0.75">Believe in yourself and Highly motivated.</div>
+		<br>
+		<div style="font-family: Comic Sans MS; font-size: medium; opacity: 0.75">Meet pusheen and Enjoy a beautiful day!</div>
+	  </div>
 	</body>
 	</html>`;
 }
 
-// TODO Feature: schedule --12.20
+// TODO Feature: Schedule
+// TODO Feature: A floating div with transparent background
+
 export function deactivate() {}
